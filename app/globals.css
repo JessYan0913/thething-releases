@@ -115,14 +115,14 @@ a {
 }
 
 .brand-mark {
-  width: 30px;
-  height: 30px;
-  border-radius: 8px;
+  width: 32px;
+  height: 32px;
+  border-radius: 9px;
   display: block;
   object-fit: contain;
-  background: #0d1b2b;
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  box-shadow: 0 0 14px rgba(52, 211, 153, 0.12);
+  background: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(0, 0, 0, 0.08) inset;
 }
 
 .nav-links {
