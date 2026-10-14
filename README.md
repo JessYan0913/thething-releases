@@ -4,13 +4,13 @@
 
 工具要人用，员工替你干活。TheThing 给你公司派一个 AI 员工：给它目标，它自己拆解、自己干、干完汇报；危险动作先问过你；干过的活沉淀成你公司的知识，越干越懂你。
 
-## ⬇️ 下载最新版 v0.12.2
+## ⬇️ 下载最新版 v0.12.3
 
 | 平台 | 下载 |
 | --- | --- |
-| macOS Apple Silicon（M 系列） | [The.Thing-0.12.2-arm64.dmg](https://github.com/JessYan0913/thething-releases/releases/download/v0.12.2/The.Thing-0.12.2-arm64.dmg) |
-| macOS Intel | [The.Thing-0.12.2.dmg](https://github.com/JessYan0913/thething-releases/releases/download/v0.12.2/The.Thing-0.12.2.dmg) |
-| Windows x64 | [The.Thing-0.12.2-win-x64.exe](https://github.com/JessYan0913/thething-releases/releases/download/v0.12.2/The.Thing-0.12.2-win-x64.exe) |
+| macOS Apple Silicon（M 系列） | [The.Thing-0.12.3-arm64.dmg](https://github.com/JessYan0913/thething-releases/releases/download/v0.12.3/The.Thing-0.12.3-arm64.dmg) |
+| macOS Intel | [The.Thing-0.12.3.dmg](https://github.com/JessYan0913/thething-releases/releases/download/v0.12.3/The.Thing-0.12.3.dmg) |
+| Windows x64 | [The.Thing-0.12.3-win-x64.exe](https://github.com/JessYan0913/thething-releases/releases/download/v0.12.3/The.Thing-0.12.3-win-x64.exe) |
 
 - 历史版本：[Releases 页面](https://github.com/JessYan0913/thething-releases/releases)
 - 版本清单（应用内更新检查用）：[latest.json](https://github.com/JessYan0913/thething-releases/releases/latest/download/latest.json)
