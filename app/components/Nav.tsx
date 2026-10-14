@@ -17,7 +17,7 @@ export default function Nav() {
     <header className="site-header">
       <div className="container nav-inner">
         <a href="#top" className="brand">
-          <span className="brand-mark">T</span>
+          <img src="/logo.svg" alt="TheThing" className="brand-mark" />
           TheThing
         </a>
         <nav aria-label="主导航">

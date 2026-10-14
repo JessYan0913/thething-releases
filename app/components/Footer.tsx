@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="site-footer">
       <div className="container footer-inner">
         <div className="footer-brand">
-          <span className="brand-mark">T</span>
+          <img src="/logo.svg" alt="TheThing" className="brand-mark" />
           TheThing
         </div>
         <ul className="footer-links">

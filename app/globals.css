@@ -117,14 +117,12 @@ a {
 .brand-mark {
   width: 30px;
   height: 30px;
-  border-radius: 9px;
-  background: linear-gradient(135deg, #34d399, #0d9488);
-  display: grid;
-  place-items: center;
-  color: #04231c;
-  font-weight: 800;
-  font-size: 15px;
-  box-shadow: 0 0 18px rgba(52, 211, 153, 0.35);
+  border-radius: 8px;
+  display: block;
+  object-fit: contain;
+  background: #0d1b2b;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: 0 0 14px rgba(52, 211, 153, 0.12);
 }
 
 .nav-links {
