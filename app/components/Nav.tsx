@@ -8,6 +8,7 @@ export default function Nav() {
   const links = [
     { href: '#value', label: '为什么是它' },
     { href: '#how', label: '怎么干活' },
+    { href: '#plugins', label: '插件' },
     { href: '#download', label: '下载' },
     { href: '#enterprise', label: '企业部署' },
     { href: '#developer', label: '开发者' },
