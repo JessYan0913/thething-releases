@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "plugins": [
+    {
+      "id": "event-log",
+      "name": "@the-thing/plugin-event-log",
+      "description": "TheThing 官方插件：可观测性，将每次插件事件 dispatch 写入 logs/events.jsonl",
+      "version": "0.1.0",
+      "author": "TheThing",
+      "official": true,
+      "downloadUrl": "https://registry.npmjs.org/@the-thing/plugin-event-log/-/plugin-event-log-0.1.0.tgz",
+      "sha256": "b95974845d02fac87c5e0b3e71262f818da0ae1b18f13d3f0e183ddbbeb24382",
+      "thethingVersion": ">=0.10.7"
+    },
+    {
+      "id": "audit-ledger",
+      "name": "@the-thing/plugin-audit-ledger",
+      "description": "TheThing 官方插件：留痕台账，订阅工具调用事件落结构化台账（带会话关联），供企业留痕管理与审计",
+      "version": "0.1.0",
+      "author": "TheThing",
+      "official": true,
+      "downloadUrl": "https://registry.npmjs.org/@the-thing/plugin-audit-ledger/-/plugin-audit-ledger-0.1.0.tgz",
+      "sha256": "4aa2d0011b09b45bf4fc96434a9974eb42ac28255293106473256d05bb49c55f",
+      "thethingVersion": ">=0.10.7"
+    },
+    {
+      "id": "auto-review",
+      "name": "@the-thing/plugin-auto-review",
+      "description": "TheThing 官方插件：帮我审批（auto-review 授权模式）——审查 agent 自动批准常规操作，需用户决策的才询问",
+      "version": "0.1.0",
+      "author": "TheThing",
+      "official": true,
+      "downloadUrl": "https://registry.npmjs.org/@the-thing/plugin-auto-review/-/plugin-auto-review-0.1.0.tgz",
+      "sha256": "56fccd5e1cfa6301b34faa2dca9b2c201aacdc9142bb07431941a455fa546078",
+      "thethingVersion": ">=0.10.7"
+    },
+    {
+      "id": "feishu",
+      "name": "@the-thing/plugin-feishu",
+      "description": "TheThing 官方插件：飞书协议连接器（HTTP 回调 + WebSocket 长连接）",
+      "version": "0.1.0",
+      "author": "TheThing",
+      "official": true,
+      "downloadUrl": "https://registry.npmjs.org/@the-thing/plugin-feishu/-/plugin-feishu-0.1.0.tgz",
+      "sha256": "d329cb36914b6014b9be0d5e7faa4743405d74dd240c201317f0827d536ece88",
+      "thethingVersion": ">=0.10.7"
+    },
+    {
+      "id": "jev-compaction",
+      "name": "@the-thing/plugin-jev-compaction",
+      "description": "TheThing 官方插件：基于 TypeSafe Jev 的上下文压缩（工具输出 keep/truncate/drop 智能判定）",
+      "version": "0.1.0",
+      "author": "TheThing",
+      "official": true,
+      "downloadUrl": "https://registry.npmjs.org/@the-thing/plugin-jev-compaction/-/plugin-jev-compaction-0.1.0.tgz",
+      "sha256": "23ad9cb9749d87dab7c0fa22dd5158f94c275a6cadc431ff3becdddf71bcaaaf",
+      "thethingVersion": ">=0.10.7"
+    },
+    {
+      "id": "rest-api",
+      "name": "@the-thing/plugin-rest-api",
+      "description": "TheThing 官方插件：通用 REST API 回调协议连接器",
+      "version": "0.1.0",
+      "author": "TheThing",
+      "official": true,
+      "downloadUrl": "https://registry.npmjs.org/@the-thing/plugin-rest-api/-/plugin-rest-api-0.1.0.tgz",
+      "sha256": "63153c54b576fd452e70e48a1ee569418634f803e4c0f9e852e1d8f79bff2bd8",
+      "thethingVersion": ">=0.10.7"
+    },
+    {
+      "id": "wechat",
+      "name": "@the-thing/plugin-wechat",
+      "description": "TheThing 官方插件：微信系协议连接器（企业微信 wecom / 公众号 wechat-mp / 客服 wechat-kf）",
+      "version": "0.1.0",
+      "author": "TheThing",
+      "official": true,
+      "downloadUrl": "https://registry.npmjs.org/@the-thing/plugin-wechat/-/plugin-wechat-0.1.0.tgz",
+      "sha256": "00787f396a8214e4cb901902dcf1cd902e222faf71234f947c6257bd0d88e533",
+      "thethingVersion": ">=0.10.7"
+    }
+  ]
+}
