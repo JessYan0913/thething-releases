@@ -4,13 +4,15 @@
 
 工具要人用，员工替你干活。TheThing 给你公司派一个 AI 员工：给它目标，它自己拆解、自己干、干完汇报；危险动作先问过你；干过的活沉淀成你公司的知识，越干越懂你。
 
-## ⬇️ 下载最新版 v0.12.3
+> 🌐 **完整落地页**：[thething-releases.vercel.app](https://thething-releases.vercel.app) — 产品介绍、下载与私有化部署咨询
+
+## ⬇️ 下载最新版 v0.12.4
 
 | 平台 | 下载 |
 | --- | --- |
-| macOS Apple Silicon（M 系列） | [The.Thing-0.12.3-arm64.dmg](https://github.com/JessYan0913/thething-releases/releases/download/v0.12.3/The.Thing-0.12.3-arm64.dmg) |
-| macOS Intel | [The.Thing-0.12.3.dmg](https://github.com/JessYan0913/thething-releases/releases/download/v0.12.3/The.Thing-0.12.3.dmg) |
-| Windows x64 | [The.Thing-0.12.3-win-x64.exe](https://github.com/JessYan0913/thething-releases/releases/download/v0.12.3/The.Thing-0.12.3-win-x64.exe) |
+| macOS Apple Silicon（M 系列） | [The.Thing-0.12.4-arm64.dmg](https://github.com/JessYan0913/thething-releases/releases/download/v0.12.4/The.Thing-0.12.4-arm64.dmg) |
+| macOS Intel | [The.Thing-0.12.4.dmg](https://github.com/JessYan0913/thething-releases/releases/download/v0.12.4/The.Thing-0.12.4.dmg) |
+| Windows x64 | [The.Thing-0.12.4-win-x64.exe](https://github.com/JessYan0913/thething-releases/releases/download/v0.12.4/The.Thing-0.12.4-win-x64.exe) |
 
 - 历史版本：[Releases 页面](https://github.com/JessYan0913/thething-releases/releases)
 - 版本清单（应用内更新检查用）：[latest.json](https://github.com/JessYan0913/thething-releases/releases/latest/download/latest.json)
@@ -65,11 +67,11 @@ AI 员工住进你的企业，而不是住进任何人的云：
 
 - 下载安装包见上方「⬇️ 下载最新版」；桌面应用内置全部能力。
 - CLI 交互：`npm i -g @the-thing/cli && thething --help`（需要 Node.js ≥ 20）。
-- 源码仓库保持私有，不对外公开；本仓库即官方发布与落地页。
+- 源码仓库保持私有，不对外公开；本仓库是官方发布仓库，产品介绍见上方落地页链接。
 
 ## 📦 关于本仓库
 
-本仓库是 TheThing 的**官方发布仓库**，承担落地页能力：
+本仓库是 TheThing 的**官方发布仓库**（独立落地页：[thething-releases.vercel.app](https://thething-releases.vercel.app)）：
 
 - 每次发布（GitHub Actions 自动）：
   - 构建 macOS（arm64/x64）与 Windows（x64）安装包并上传 Release
