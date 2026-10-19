@@ -20,20 +20,20 @@ export interface ReleaseInfo {
  * 拉取失败（离线 / 限流 / 被墙）时页面仍可用这套默认值，保证首屏与离线体验。
  */
 export const DEFAULT_RELEASE: ReleaseInfo = {
-  version: '0.12.3',
-  releaseUrl: 'https://github.com/JessYan0913/thething-releases/releases/tag/v0.12.3',
+  version: '0.13.2',
+  releaseUrl: 'https://github.com/JessYan0913/thething-releases/releases/tag/v0.13.2',
   platforms: {
     'darwin-arm64': {
-      url: 'https://github.com/JessYan0913/thething-releases/releases/download/v0.12.3/The.Thing-0.12.3-arm64.dmg',
-      filename: 'The.Thing-0.12.3-arm64.dmg',
+      url: 'https://github.com/JessYan0913/thething-releases/releases/download/v0.13.2/TheThing-0.13.2-arm64.dmg',
+      filename: 'TheThing-0.13.2-arm64.dmg',
     },
     'darwin-x64': {
-      url: 'https://github.com/JessYan0913/thething-releases/releases/download/v0.12.3/The.Thing-0.12.3.dmg',
-      filename: 'The.Thing-0.12.3.dmg',
+      url: 'https://github.com/JessYan0913/thething-releases/releases/download/v0.13.2/TheThing-0.13.2.dmg',
+      filename: 'TheThing-0.13.2.dmg',
     },
     'win32-x64': {
-      url: 'https://github.com/JessYan0913/thething-releases/releases/download/v0.12.3/The.Thing-0.12.3-win-x64.exe',
-      filename: 'The.Thing-0.12.3-win-x64.exe',
+      url: 'https://github.com/JessYan0913/thething-releases/releases/download/v0.13.2/TheThing-0.13.2-win-x64.exe',
+      filename: 'TheThing-0.13.2-win-x64.exe',
     },
   },
 }
@@ -80,9 +80,9 @@ export function ReleaseProvider({ children }: { children: ReactNode }) {
           version,
           releaseUrl: d?.html_url || DEFAULT_RELEASE.releaseUrl,
           platforms: {
-            'darwin-arm64': base(a64, 'The.Thing-' + version + '-arm64.dmg') ?? DEFAULT_RELEASE.platforms['darwin-arm64'],
-            'darwin-x64': base(ax64, 'The.Thing-' + version + '.dmg') ?? DEFAULT_RELEASE.platforms['darwin-x64'],
-            'win32-x64': base(win, 'The.Thing-' + version + '-win-x64.exe') ?? DEFAULT_RELEASE.platforms['win32-x64'],
+            'darwin-arm64': base(a64, 'TheThing-' + version + '-arm64.dmg') ?? DEFAULT_RELEASE.platforms['darwin-arm64'],
+            'darwin-x64': base(ax64, 'TheThing-' + version + '.dmg') ?? DEFAULT_RELEASE.platforms['darwin-x64'],
+            'win32-x64': base(win, 'TheThing-' + version + '-win-x64.exe') ?? DEFAULT_RELEASE.platforms['win32-x64'],
           },
         }
         setRelease(next)

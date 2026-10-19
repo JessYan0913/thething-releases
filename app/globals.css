@@ -927,6 +927,32 @@ a {
   width: 100%;
 }
 
+/* macOS 卡片内安装提示：紧贴下载按钮，点下载前必然可见 */
+.dl-mac-note {
+  font-size: 12px;
+  color: var(--muted-2);
+  line-height: 1.7;
+  background: rgba(245, 158, 11, 0.06);
+  border: 1px solid rgba(245, 158, 11, 0.22);
+  border-radius: 8px;
+  padding: 9px 11px;
+}
+
+.dl-mac-note b {
+  color: var(--amber);
+  font-weight: 600;
+}
+
+.dl-mac-note code {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1px 6px;
+  border-radius: 5px;
+  color: var(--amber);
+  word-break: break-all;
+}
+
 .dl-foot {
   display: flex;
   flex-wrap: wrap;

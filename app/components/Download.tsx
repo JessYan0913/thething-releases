@@ -28,6 +28,8 @@ const PLATFORMS: {
   },
 ]
 
+const isMac = (key: string) => key.startsWith('darwin-')
+
 export default function Download() {
   const { version, releaseUrl, platforms } = useRelease()
 
@@ -64,6 +66,14 @@ export default function Download() {
                 >
                   下载安装包
                 </a>
+                {isMac(p.key) && (
+                  <div className="dl-mac-note">
+                    <b>macOS 提示：</b>应用未签名（ad-hoc）。若浏览器下载后首次打开提示
+                    「已损坏」，在终端执行一次
+                    <code>xattr -cr '/Applications/TheThing.app'</code>
+                    后再双击打开即可。命令行下载的 dmg 双击可直接打开。
+                  </div>
+                )}
               </div>
             )
           })}
@@ -82,9 +92,8 @@ export default function Download() {
         </div>
 
         <div className="dl-note">
-          <b>macOS 安装提示：</b>应用未签名（ad-hoc）。用
-          <code>curl</code> 命令行下载的 dmg 双击即可直接打开；浏览器下载首次打开会提示「已损坏」，
-          在终端执行一次 <code>xattr -cr '/Applications/The Thing.app'</code> 后再双击打开即可。
+          <b>安装说明：</b>macOS 安装指引见上方对应卡片；浏览器下载的 dmg 若提示「已损坏」，
+          在终端执行 <code>xattr -cr '/Applications/TheThing.app'</code> 后即可打开。
           Windows 直接运行 exe 按向导安装。
         </div>
       </div>
