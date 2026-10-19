@@ -10,9 +10,9 @@
 
 | 平台 | 下载 |
 | --- | --- |
-| macOS Apple Silicon（M 系列） | [The.Thing-0.13.2-arm64.dmg](https://github.com/JessYan0913/thething-releases/releases/download/v0.13.2/The.Thing-0.13.2-arm64.dmg) |
-| macOS Intel | [The.Thing-0.13.2.dmg](https://github.com/JessYan0913/thething-releases/releases/download/v0.13.2/The.Thing-0.13.2.dmg) |
-| Windows x64 | [The.Thing-0.13.2-win-x64.exe](https://github.com/JessYan0913/thething-releases/releases/download/v0.13.2/The.Thing-0.13.2-win-x64.exe) |
+| macOS Apple Silicon（M 系列） | [TheThing-0.13.2-arm64.dmg](https://github.com/JessYan0913/thething-releases/releases/download/v0.13.2/TheThing-0.13.2-arm64.dmg) |
+| macOS Intel | [TheThing-0.13.2.dmg](https://github.com/JessYan0913/thething-releases/releases/download/v0.13.2/TheThing-0.13.2.dmg) |
+| Windows x64 | [TheThing-0.13.2-win-x64.exe](https://github.com/JessYan0913/thething-releases/releases/download/v0.13.2/TheThing-0.13.2-win-x64.exe) |
 
 - 历史版本：[Releases 页面](https://github.com/JessYan0913/thething-releases/releases)
 - 版本清单（应用内更新检查用）：[latest.json](https://github.com/JessYan0913/thething-releases/releases/latest/download/latest.json)
@@ -22,10 +22,10 @@
 > 应用未签名（ad-hoc），**命令行下载**的 dmg 双击即可直接打开；**浏览器下载**首次打开会报「已损坏」，在终端执行一次后再双击打开：
 
 ```bash
-xattr -cr '/Applications/The Thing.app'
+xattr -cr '/Applications/TheThing.app'
 ```
 
-打开 dmg 后把 **The Thing** 拖进「应用程序」，双击即可运行，无需额外设置。
+打开 dmg 后把 **TheThing** 拖进「应用程序」，双击即可运行，无需额外设置。
 
 ### Windows 安装说明
 
