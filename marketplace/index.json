@@ -2,17 +2,6 @@
   "schemaVersion": 1,
   "plugins": [
     {
-      "id": "event-log",
-      "name": "@the-thing/plugin-event-log",
-      "description": "TheThing 官方插件：可观测性，将每次插件事件 dispatch 写入 logs/events.jsonl",
-      "version": "0.1.0",
-      "author": "TheThing",
-      "official": true,
-      "downloadUrl": "https://registry.npmjs.org/@the-thing/plugin-event-log/-/plugin-event-log-0.1.0.tgz",
-      "sha256": "b95974845d02fac87c5e0b3e71262f818da0ae1b18f13d3f0e183ddbbeb24382",
-      "thethingVersion": ">=0.10.7"
-    },
-    {
       "id": "audit-ledger",
       "name": "@the-thing/plugin-audit-ledger",
       "description": "TheThing 官方插件：留痕台账，订阅工具调用事件落结构化台账（带会话关联），供企业留痕管理与审计",
@@ -35,6 +24,17 @@
       "thethingVersion": ">=0.10.7"
     },
     {
+      "id": "event-log",
+      "name": "@the-thing/plugin-event-log",
+      "description": "TheThing 官方插件：可观测性，将每次插件事件 dispatch 写入 logs/events.jsonl",
+      "version": "0.1.0",
+      "author": "TheThing",
+      "official": true,
+      "downloadUrl": "https://registry.npmjs.org/@the-thing/plugin-event-log/-/plugin-event-log-0.1.0.tgz",
+      "sha256": "b95974845d02fac87c5e0b3e71262f818da0ae1b18f13d3f0e183ddbbeb24382",
+      "thethingVersion": ">=0.10.7"
+    },
+    {
       "id": "feishu",
       "name": "@the-thing/plugin-feishu",
       "description": "TheThing 官方插件：飞书协议连接器（HTTP 回调 + WebSocket 长连接）",
@@ -43,6 +43,17 @@
       "official": true,
       "downloadUrl": "https://registry.npmjs.org/@the-thing/plugin-feishu/-/plugin-feishu-0.1.0.tgz",
       "sha256": "d329cb36914b6014b9be0d5e7faa4743405d74dd240c201317f0827d536ece88",
+      "thethingVersion": ">=0.10.7"
+    },
+    {
+      "id": "gomoku",
+      "name": "gomoku",
+      "description": "15 路五子棋：人机对战（三档难度）/ 双人对战、悔棋、胜负高亮、比分统计",
+      "version": "0.0.1",
+      "author": "TheThing",
+      "official": true,
+      "downloadUrl": "https://cdn.jsdelivr.net/gh/JessYan0913/thething-releases@main/marketplace/packages/gomoku-0.0.1.tgz",
+      "sha256": "bf2c13b64b45ca9884b073eb1c085d620708a1723d9cad31e2fef78b770302c2",
       "thethingVersion": ">=0.10.7"
     },
     {
@@ -57,6 +68,17 @@
       "thethingVersion": ">=0.10.7"
     },
     {
+      "id": "quote-desk",
+      "name": "quote-desk",
+      "description": "询价工作台：维护待询价清单，一键把本批任务单交给 Agent 用内建浏览器采集淘宝/拼多多报价，实时对表、看历史价格、导出 CSV",
+      "version": "0.1.0",
+      "author": "TheThing",
+      "official": true,
+      "downloadUrl": "https://cdn.jsdelivr.net/gh/JessYan0913/thething-releases@main/marketplace/packages/quote-desk-0.1.0.tgz",
+      "sha256": "42b91521f77a05abd4b12c1224901b14f397a92a51d3f36c1933f6015c7ff0eb",
+      "thethingVersion": ">=0.10.7"
+    },
+    {
       "id": "rest-api",
       "name": "@the-thing/plugin-rest-api",
       "description": "TheThing 官方插件：通用 REST API 回调协议连接器",
@@ -65,6 +87,28 @@
       "official": true,
       "downloadUrl": "https://registry.npmjs.org/@the-thing/plugin-rest-api/-/plugin-rest-api-0.1.0.tgz",
       "sha256": "63153c54b576fd452e70e48a1ee569418634f803e4c0f9e852e1d8f79bff2bd8",
+      "thethingVersion": ">=0.10.7"
+    },
+    {
+      "id": "tank-battle",
+      "name": "tank-battle",
+      "description": "坦克大战：Canvas 实时战场，13x13 砖墙钢墙地图、敌方 AI、基地保卫、关卡递进、道具与音效",
+      "version": "1.0.0",
+      "author": "TheThing",
+      "official": true,
+      "downloadUrl": "https://cdn.jsdelivr.net/gh/JessYan0913/thething-releases@main/marketplace/packages/tank-battle-1.0.0.tgz",
+      "sha256": "abf0e72fd0b76440ce877519a0e02d225d604e40aec193bf3d71e6f21d0051ab",
+      "thethingVersion": ">=0.10.7"
+    },
+    {
+      "id": "tic-tac-toe",
+      "name": "tic-tac-toe",
+      "description": "可玩的井字棋面板：X/O 轮流、三连判定、胜利高亮、比分与重开",
+      "version": "0.0.1",
+      "author": "TheThing",
+      "official": true,
+      "downloadUrl": "https://cdn.jsdelivr.net/gh/JessYan0913/thething-releases@main/marketplace/packages/tic-tac-toe-0.0.1.tgz",
+      "sha256": "8ed94471b1ff40e2c6033e1a3b64ccf509b10eb6ffa1a3303643e1436b2bd489",
       "thethingVersion": ">=0.10.7"
     },
     {
