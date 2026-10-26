@@ -66,8 +66,49 @@ AI 员工住进你的企业，而不是住进任何人的云：
 ## 🧰 个人 / 开发者使用
 
 - 下载安装包见上方「⬇️ 下载最新版」；桌面应用内置全部能力。
-- CLI 交互：`npm i -g @the-thing/cli && thething --help`（需要 Node.js ≥ 20）。
 - 源码仓库保持私有，不对外公开；本仓库是官方发布仓库，产品介绍见上方落地页链接。
+
+### 🧩 安装插件
+
+需要 Node.js ≥ 20。单文件 CLI，零依赖，拷走就能跑：
+
+```bash
+curl -sL --compressed \
+  https://cdn.jsdelivr.net/gh/JessYan0913/thething-releases@main/cli/thething-0.11.0.mjs \
+  -o thething.mjs
+
+node thething.mjs plugin market          # 看看有哪些
+node thething.mjs plugin install gomoku  # 装一个
+```
+
+也可以在桌面应用里走「设置 → 插件 → 市场」。插件装到 `~/.thething/plugins/`，重启应用生效。
+
+插件清单：
+
+| 名称 | 说明 |
+|---|---|
+| `event-log` | 把全部 11 类插件事件落成 jsonl，用于排查和回放 |
+| `audit-ledger` | 工具调用留痕台账，记录 sessionId / stepIndex / 工具入参 |
+| `auto-review` | 自动化审批策略 |
+| `feishu` / `wechat` | 飞书、微信连接器 |
+| `jev-compaction` | 上下文压缩 |
+| `rest-api` | REST 接口连接器 |
+| `gomoku` / `tic-tac-toe` / `tank-battle` | 面板插件示例（侧边栏小游戏，演示面板 API） |
+| `quote-desk` | 面板插件示例（询价工作台） |
+
+### 🛠 自己做插件
+
+`plugin.json` + `index.js` + `panel.css` 三个文件就是一个面板插件，没有构建步骤。
+订阅 `tool.before` / `tool.after` 等事件即可挂到工具调用链路上。
+
+发布到本市场：
+
+```bash
+node scripts/publish-panel-plugin.mjs <插件名> --push
+```
+
+会校验插件目录、打 tgz、算 sha256、更新 `marketplace/index.json` 并推送。
+客户端装包前会硬校验 sha256，不一致直接拒绝。
 
 ## 📦 关于本仓库
 
