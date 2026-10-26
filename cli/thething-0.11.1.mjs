@@ -162461,7 +162461,7 @@ var {
 // package.json
 var package_default = {
   name: "@the-thing/cli",
-  version: "0.11.0",
+  version: "0.11.1",
   bin: {
     thething: "./dist/index.mjs"
   },
@@ -163002,12 +163002,7 @@ dbCmd.command("path").description("Show database path").action(() => db_default.
 dbCmd.command("backup <path>").description("Backup database to specified path").action((backupPath) => db_default.backup(backupPath));
 var pluginCmd = program2.command("plugin").description("Plugin management");
 pluginCmd.command("list").description("List plugins with enabled status").action(async () => {
-  const runtime = await createCliRuntime();
-  try {
-    await plugins_default.list(runtime.layout.resourceRoot);
-  } finally {
-    await runtime.dispose();
-  }
+  await plugins_default.list(process.cwd());
 });
 pluginCmd.command("market").description("List plugins available in the marketplace").option("--marketplace <url>", "Marketplace index URL (default: THETHING_MARKETPLACE_URL or official)").action((opts) => plugins_default.market(opts));
 pluginCmd.command("install <id>").description("Install a plugin from the marketplace by id").option("--marketplace <url>", "Marketplace index URL (default: THETHING_MARKETPLACE_URL or official)").action((id, opts) => plugins_default.install(id, opts));
