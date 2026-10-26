@@ -21,14 +21,14 @@ export default function Developer() {
         <div className="dev-box">
           <div className="dev-panel">
             <h3>命令行安装</h3>
-            <p>需要 Node.js ≥ 20。一行命令装好，直接对话。</p>
+            <p>需要 Node.js ≥ 20。bash / zsh 一行装好，直接对话。</p>
             <div className="term">
-              <span className="prompt">$</span> npm i -g @the-thing/cli
+              <span className="prompt">$</span> curl -sL https://cdn.jsdelivr.net/gh/JessYan0913/thething-releases@main/cli/thething-0.11.0.mjs -o thething.mjs
               <br />
-              <span className="prompt">$</span> thething --help
+              <span className="prompt">$</span> node thething.mjs plugin install gomoku
             </div>
             <div className="dev-note">
-              源码仓库保持私有，不对外公开；本仓库即官方发布与落地页。
+              单文件、零依赖，有 Node 就能跑。装完的插件落在 ~/.thething/plugins/，重启应用生效。
             </div>
           </div>
 

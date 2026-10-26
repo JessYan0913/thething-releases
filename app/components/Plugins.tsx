@@ -21,6 +21,10 @@ const ICONS: Record<string, string> = {
   'jev-compaction': '🧠',
   'rest-api': '🔌',
   wechat: '💬',
+  gomoku: '⚫',
+  'tic-tac-toe': '⭕',
+  'tank-battle': '🎮',
+  'quote-desk': '📊',
 }
 
 const CATEGORY: Record<string, string> = {
@@ -31,6 +35,10 @@ const CATEGORY: Record<string, string> = {
   'jev-compaction': '上下文压缩',
   'rest-api': '连接器',
   wechat: '连接器',
+  gomoku: '面板插件',
+  'tic-tac-toe': '面板插件',
+  'tank-battle': '面板插件',
+  'quote-desk': '面板插件',
 }
 
 export default function Plugins() {
@@ -69,9 +77,14 @@ export default function Plugins() {
         <div className="plugin-note">
           <span aria-hidden>💡</span>
           <p>
-            想按需安装？命令行一行装好：
-            <code>thething plugin install &lt;名称&gt;</code>
-            ，或在插件管理页「市场」里点击安装。插件安装后立即启用，重启应用生效。
+            想按需安装？两种方式：
+            <br />
+            ① 应用内「设置 → 插件 → 市场」点安装；
+            <br />
+            ② 命令行（需 Node.js ≥ 20）：
+            <code>curl -sL --compressed https://cdn.jsdelivr.net/gh/JessYan0913/thething-releases@main/cli/thething-0.11.0.mjs -o thething.mjs &amp;&amp; node thething.mjs plugin install &lt;名称&gt;</code>
+            <br />
+            插件安装后立即启用，重启应用生效。
           </p>
         </div>
       </div>
