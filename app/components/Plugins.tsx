@@ -82,7 +82,7 @@ export default function Plugins() {
             ① 应用内「设置 → 插件 → 市场」点安装；
             <br />
             ② 命令行（需 Node.js ≥ 20）：
-            <code>curl -sL --compressed https://cdn.jsdelivr.net/gh/JessYan0913/thething-releases@main/cli/thething-0.11.1.mjs -o thething.mjs &amp;&amp; node thething.mjs plugin install &lt;名称&gt;</code>
+            <code>curl -sL --compressed https://cdn.jsdelivr.net/gh/JessYan0913/thething-releases@main/cli/thething-0.11.3.mjs -o thething.mjs &amp;&amp; node thething.mjs plugin install &lt;名称&gt;</code>
             <br />
             插件安装后立即启用，重启应用生效。
           </p>

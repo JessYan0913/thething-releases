@@ -152292,9 +152292,6 @@ function resolveMarketplaceUrls() {
     "https://cdn.jsdelivr.net/gh/JessYan0913/thething-releases@main/marketplace/index.json"
   ];
 }
-function resolveMarketplaceUrl() {
-  return resolveMarketplaceUrls()[0];
-}
 async function fetchMarketplaceIndexWithFallback(urls = resolveMarketplaceUrls(), fetchImpl = fetch) {
   let lastErr;
   for (let i = 0; i < urls.length; i++) {
@@ -152309,7 +152306,35 @@ async function fetchMarketplaceIndexWithFallback(urls = resolveMarketplaceUrls()
     `\u5E02\u573A\u6E05\u5355\u83B7\u53D6\u5931\u8D25\uFF08\u5DF2\u5C1D\u8BD5 ${urls.length} \u4E2A\u6E90\uFF09: ${lastErr instanceof Error ? lastErr.message : String(lastErr)}`
   );
 }
+function withPackageMirrors(url2) {
+  const out = [url2];
+  const raw = /^https:\/\/raw\.githubusercontent\.com\/([^/]+)\/([^/]+)\/([^/]+)\/(.+)$/.exec(url2);
+  if (raw) {
+    const [, owner, repo, ref, rest] = raw;
+    out.push(`https://cdn.jsdelivr.net/gh/${owner}/${repo}@${ref}/${rest}`);
+  }
+  const jsd = /^https:\/\/cdn\.jsdelivr\.net\/gh\/([^/]+)\/([^@]+)@([^/]+)\/(.+)$/.exec(url2);
+  if (jsd) {
+    const [, owner, repo, ref, rest] = jsd;
+    out.push(`https://raw.githubusercontent.com/${owner}/${repo}/${ref}/${rest}`);
+  }
+  return [...new Set(out)];
+}
 async function downloadToTemp(url2, fetchImpl) {
+  const mirrors = withPackageMirrors(url2);
+  let lastErr;
+  for (const mirror of mirrors) {
+    try {
+      return await downloadOnce(mirror, fetchImpl);
+    } catch (e2) {
+      lastErr = e2;
+    }
+  }
+  throw new MarketplaceError(
+    `\u4E0B\u8F7D\u5931\u8D25\uFF08\u5DF2\u5C1D\u8BD5 ${mirrors.length} \u4E2A\u955C\u50CF\uFF09: ${url2} (${lastErr instanceof Error ? lastErr.message : String(lastErr)})`
+  );
+}
+async function downloadOnce(url2, fetchImpl) {
   const ATTEMPTS = 3;
   const TIMEOUT_MS = 15e3;
   let lastErr;
@@ -162461,7 +162486,7 @@ var {
 // package.json
 var package_default = {
   name: "@the-thing/cli",
-  version: "0.11.1",
+  version: "0.11.3",
   bin: {
     thething: "./dist/index.mjs"
   },
@@ -162642,13 +162667,13 @@ function scanDir2(dir, source) {
   }).filter((p2) => p2 !== null);
 }
 async function pluginInstall(idOrPath, opts) {
-  const marketplaceUrl = opts?.marketplace ?? resolveMarketplaceUrl();
   try {
     console.log(source_default.cyan(`\u4ECE\u5E02\u573A\u5B89\u88C5\u63D2\u4EF6 ${idOrPath} ...`));
-    const result = await installMarketplacePlugin(marketplaceUrl, idOrPath, {
+    const indexUrls = opts?.marketplace ? [opts.marketplace] : resolveMarketplaceUrls();
+    const result = await installMarketplacePlugin(indexUrls[0], idOrPath, {
       pluginsDir: PLUGINS_DIR,
       configDir: CONFIG_DIR,
-      ...opts?.marketplace ? { indexUrls: [opts.marketplace] } : {}
+      indexUrls
     });
     console.log(source_default.green(`\u2713 \u5DF2\u5B89\u88C5 ${result.name}@${result.version}\uFF08\u5DF2\u542F\u7528\uFF09`));
     console.log(source_default.gray(`  \u5B89\u88C5\u76EE\u5F55: ${result.dir}`));
