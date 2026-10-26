@@ -52,8 +52,8 @@
       "version": "0.0.1",
       "author": "TheThing",
       "official": true,
-      "downloadUrl": "https://cdn.jsdelivr.net/gh/JessYan0913/thething-releases@main/marketplace/packages/gomoku-0.0.1.tgz",
-      "sha256": "bf2c13b64b45ca9884b073eb1c085d620708a1723d9cad31e2fef78b770302c2",
+      "downloadUrl": "https://github.com/JessYan0913/thething-releases/releases/download/marketplace/gomoku-0.0.1.tgz",
+      "sha256": "093546bcf5fc6f75f688372a1b6b5eb3e1bf35a5b4217be29b9875817811962e",
       "thethingVersion": ">=0.10.7"
     },
     {
@@ -74,8 +74,8 @@
       "version": "0.1.0",
       "author": "TheThing",
       "official": true,
-      "downloadUrl": "https://cdn.jsdelivr.net/gh/JessYan0913/thething-releases@main/marketplace/packages/quote-desk-0.1.0.tgz",
-      "sha256": "42b91521f77a05abd4b12c1224901b14f397a92a51d3f36c1933f6015c7ff0eb",
+      "downloadUrl": "https://github.com/JessYan0913/thething-releases/releases/download/marketplace/quote-desk-0.1.0.tgz",
+      "sha256": "6ac14ccb8922d8d069b22fb5183b0a856e0e2522514cf4c5f61c6e02455fc155",
       "thethingVersion": ">=0.10.7"
     },
     {
@@ -96,8 +96,8 @@
       "version": "1.0.0",
       "author": "TheThing",
       "official": true,
-      "downloadUrl": "https://cdn.jsdelivr.net/gh/JessYan0913/thething-releases@main/marketplace/packages/tank-battle-1.0.0.tgz",
-      "sha256": "abf0e72fd0b76440ce877519a0e02d225d604e40aec193bf3d71e6f21d0051ab",
+      "downloadUrl": "https://github.com/JessYan0913/thething-releases/releases/download/marketplace/tank-battle-1.0.0.tgz",
+      "sha256": "afe45aa98a07cb92505d7e86685c3e5b801d132b60d2ddd9d724e55c9c9fc942",
       "thethingVersion": ">=0.10.7"
     },
     {
@@ -107,8 +107,8 @@
       "version": "0.0.1",
       "author": "TheThing",
       "official": true,
-      "downloadUrl": "https://cdn.jsdelivr.net/gh/JessYan0913/thething-releases@main/marketplace/packages/tic-tac-toe-0.0.1.tgz",
-      "sha256": "8ed94471b1ff40e2c6033e1a3b64ccf509b10eb6ffa1a3303643e1436b2bd489",
+      "downloadUrl": "https://github.com/JessYan0913/thething-releases/releases/download/marketplace/tic-tac-toe-0.0.1.tgz",
+      "sha256": "9033855225f06f30d54e319d4cf806db46d1b6f5845d04e128994496246b59f2",
       "thethingVersion": ">=0.10.7"
     },
     {
