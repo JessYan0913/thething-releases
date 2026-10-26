@@ -23,7 +23,7 @@ export default function Developer() {
             <h3>命令行安装</h3>
             <p>需要 Node.js ≥ 20。bash / zsh 一行装好，直接对话。</p>
             <div className="term">
-              <span className="prompt">$</span> curl -sL https://cdn.jsdelivr.net/gh/JessYan0913/thething-releases@main/cli/thething-0.11.3.mjs -o thething.mjs
+              <span className="prompt">$</span> curl -sL --compressed https://cdn.jsdelivr.net/gh/JessYan0913/thething-releases@main/cli/thething-0.11.3.mjs -o thething.mjs
               <br />
               <span className="prompt">$</span> node thething.mjs plugin install gomoku
             </div>
