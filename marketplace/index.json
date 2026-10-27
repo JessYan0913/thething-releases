@@ -2,17 +2,6 @@
   "schemaVersion": 1,
   "plugins": [
     {
-      "id": "auto-review",
-      "name": "@the-thing/plugin-auto-review",
-      "description": "TheThing 官方插件：帮我审批（auto-review 授权模式）——审查 agent 自动批准常规操作，需用户决策的才询问",
-      "version": "0.1.0",
-      "author": "TheThing",
-      "official": true,
-      "downloadUrl": "https://registry.npmjs.org/@the-thing/plugin-auto-review/-/plugin-auto-review-0.1.0.tgz",
-      "sha256": "56fccd5e1cfa6301b34faa2dca9b2c201aacdc9142bb07431941a455fa546078",
-      "thethingVersion": ">=0.10.7"
-    },
-    {
       "id": "feishu",
       "name": "@the-thing/plugin-feishu",
       "description": "TheThing 官方插件：飞书协议连接器（HTTP 回调 + WebSocket 长连接）",
