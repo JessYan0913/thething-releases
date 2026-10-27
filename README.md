@@ -74,7 +74,7 @@ AI 员工住进你的企业，而不是住进任何人的云：
 
 ```bash
 curl -sL --compressed \
-  https://cdn.jsdelivr.net/gh/JessYan0913/thething-releases@main/cli/thething-0.11.0.mjs \
+  https://cdn.jsdelivr.net/gh/JessYan0913/thething-releases@main/cli/thething-0.11.3.mjs \
   -o thething.mjs
 
 node thething.mjs plugin market          # 看看有哪些
