@@ -6,13 +6,13 @@
 
 > 🌐 **完整落地页**：[thething-releases.vercel.app](https://thething-releases.vercel.app) — 产品介绍、下载与私有化部署咨询
 
-## ⬇️ 下载最新版 v0.16.0
+## ⬇️ 下载最新版 v0.16.1
 
 | 平台 | 下载 |
 | --- | --- |
-| macOS Apple Silicon（M 系列） | [TheThing-0.16.0-arm64.dmg](https://github.com/JessYan0913/thething-releases/releases/download/v0.16.0/TheThing-0.16.0-arm64.dmg) |
-| macOS Intel | [TheThing-0.16.0.dmg](https://github.com/JessYan0913/thething-releases/releases/download/v0.16.0/TheThing-0.16.0.dmg) |
-| Windows x64 | [TheThing-0.16.0-win-x64.exe](https://github.com/JessYan0913/thething-releases/releases/download/v0.16.0/TheThing-0.16.0-win-x64.exe) |
+| macOS Apple Silicon（M 系列） | [TheThing-0.16.1-arm64.dmg](https://github.com/JessYan0913/thething-releases/releases/download/v0.16.1/TheThing-0.16.1-arm64.dmg) |
+| macOS Intel | [TheThing-0.16.1.dmg](https://github.com/JessYan0913/thething-releases/releases/download/v0.16.1/TheThing-0.16.1.dmg) |
+| Windows x64 | [TheThing-0.16.1-win-x64.exe](https://github.com/JessYan0913/thething-releases/releases/download/v0.16.1/TheThing-0.16.1-win-x64.exe) |
 
 - 历史版本：[Releases 页面](https://github.com/JessYan0913/thething-releases/releases)
 - 版本清单（应用内更新检查用）：[latest.json](https://github.com/JessYan0913/thething-releases/releases/latest/download/latest.json)
