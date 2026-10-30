@@ -24,6 +24,17 @@
       "thethingVersion": ">=0.10.7"
     },
     {
+      "id": "guandan-panel",
+      "name": "guandan-panel",
+      "description": "掼蛋对局：四家环绕牌桌、完整牌型判定（顺子/钢板/炸弹/同花顺/四大天王）、逢人配、进贡还贡、双方级牌记分、AI 自动对打，可一键把局面交给 Agent 咨询",
+      "version": "1.0.0",
+      "author": "TheThing",
+      "official": true,
+      "downloadUrl": "https://raw.githubusercontent.com/JessYan0913/thething-releases/main/marketplace/packages/guandan-panel-1.0.0-d711a9ef.tgz",
+      "sha256": "d711a9ef16ca6fee8cd5133856c81a0fd352e41295ae44096609d7ba405b5172",
+      "thethingVersion": ">=0.10.7"
+    },
+    {
       "id": "jev-compaction",
       "name": "@the-thing/plugin-jev-compaction",
       "description": "TheThing 官方插件：基于 TypeSafe Jev 的上下文压缩（工具输出 keep/truncate/drop 智能判定）",
